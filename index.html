@@ -1,8 +1,150 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: #5f9470;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aba;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: #5f9470;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  background-color: #5f9470;
+
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
 <body>
-<h1>Hoogeweg Tuinen Website</h1>
-<img src="2021_08_07_photo1.jpg" alt="Girl in a jacket" style="width:400;height:300px;"> 
-<p>I'm hosted with GitHub Pages.</p>
+
+<div class="header">
+  <h2>Hoogeweg Tuinen</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Sloopwerk is voltooid</h2>
+      <h5>10 Augustus, 2021</h5>
+	  <img src="./image/20210810_142251_web.jpg" alt="" style="width:400;height:300px;"> 
+	  <img src="./image/20210810_142217_web.jpg" alt="" style="width:400;height:300px;"> 
+
+      <p>Het sloopwerk is vooltooid. Een container van 10 kubieke meter vol met hout en een tweede container met puin is half vol</p>
+      <p>Morgen, Woensdag 11 Augustus komt de dakkapel erop en twee dakramen in de kleine slaapkamers</p>
+    </div>
+	<div class="card">
+      <h2>Het is ook een beetje vakantie</h2>
+      <h5>9 Augustus, 2021</h5>
+	  <img src="./image/20210809_144547_web.jpg" alt="" style="width:400;height:300px;"> 
+	  <img src="./image/20210809_152042_web.jpg" alt="" style="width:400;height:300px;"> 
+      <p>Donderdag wordt er mooi weer voorspeld dus de 'Pool-girls' zijn al druk bezig met voorbereidingen.</p>
+      <p>Alles natuurlijk wel een beetje tranquilo.</p>
+    </div>
+    <div class="card">
+      <h2>Veel handen maken licht werk</h2>
+      <h5>7 Augustus, 2021</h5>
+	  <img src="./image/20210806_190051_web.jpg" alt="" style="width:400;height:300px;"> 
+	  <img src="./image/20210806_190111_web.jpg" alt="" style="width:400;height:300px;"> 
+	  <img src="./image/20210807_102156_web.jpg" alt="" style="width:400;height:300px;"> 
+	  <img src="./image/20210807_102207_web.jpg" alt="" style="width:400;height:300px;"> 
+	  <img src="./image/2021_08_07_photo1_web.jpg" alt="" style="width:400;height:300px;"> 
+      <p>Op onze tweede dag als bewoners van dit huis hebben we hulp gekregen van Liese en Ernst. Natuurlijk waren ook Yris, Hilko en Lotte van de partij.</p>
+      <p>Het vakmanschap van Ernst en zijn gereedschap kwamen goed van pas. Aan het eind van de dag was al het grote breekwerk gedaan en konden we zelf 
+	  beginnen met het afvoeren van het puin</p>
+    </div>
+	<div class="card">
+      <h2>De nieuwe eigenaren</h2>
+      <h5>6 Augustus, 2021</h5>
+	  <img src="./image/20210810_144616_web.jpg" alt="" style="width:400;height:300px;"> 
+	  <img src="./image/20210810_144447_web.jpg" alt="" style="width:400;height:300px;"> 
+	  <img src="./image/20210810_144157_web.jpg" alt="" style="width:400;height:300px;"> 
+	  <img src="./image/VoorSloop_Kamer1.jpg" alt="" style="width:400;height:300px;"> 
+	  <img src="./image/VoorSloop_kamer2.jpg" alt="" style="width:400;height:300px;"> 
+	  
+      <p>Sinds vrijdag 6 augustus zijn wij de gelukkige eigenaren van dit huis in Escharen. Het is een boerderij uit 1912 dit in 1984 omgebouwd 
+	  is tot 2 wooneenheden waarvan wij de voormalige stal gaan bewonen. Achter en naast het huis ligt een prachtige tuin met vijver en zwembad.</p>
+      <p>De komende weken gaan we verbouwen. Van de hele bovenverdieping gaan we de jaren-70 schrootjes verwijderen en wordt alles nieuw afgetimmerd. 
+	  De achterzijde van het huis krijgt een dakkapel over de badkamer en een slaapkamer. Tevens komen er een nieuwe badkamer en keuken in. </p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Over ons</h2>
+	  <img src="./image/AboutUs_web.jpg" alt="" style="width:200;height:150px;"> 
+
+      <p>Wij zijn Frank en Sandra. Na 10 jaar Zwitserland en 17 jaar Malden hebben we nu een stekje gevonden op het Brabantse platteland. 
+	  We houden van buiten zijn en tuinieren en verwachten dat we hier ons hart kunnen ophalen.</p>
+	  <p>In deze blog proberen we bij te houden wat er zoal bij ons gebeurt.</p>
+    </div>
+
+
+  </div>
+</div>
+
+<div class="footer">
+  <h2></h2>
+</div>
+
 </body>
 </html>
